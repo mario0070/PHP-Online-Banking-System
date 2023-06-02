@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.reciept{
+    transform: translateY(-240px);
+    margin: auto auto;
+    width: 85%;
+    background-color: white;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: .1em .1em 1em rgba(0, 0, 0, 0.215);
+}
+
+.reciept .head{
+    margin-top: .5em;
+    margin-bottom: 2em;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.reciept img{
+    width: 100px;
+    width: 100px;
+    position: absolute;
+    border-radius: 50%;
+    right: 0;
+    margin-top: 2.5em;
+}
+
+.reciept .pack{
+    margin-bottom: 2em;
+}
+
+.reciept .body h5{
+    font-size: 1.1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: .5em;
+}
+
+.reciept .body span{
+    color: rgba(0, 0, 0, 0.518);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.reciept .body .btns{
+    margin-left: 1em;
+    margin-bottom: 2em;
+}
+
+.reciept .body a{
+    text-decoration: none;
+    padding: 1em;
+    border-radius: .4em;
+    font-weight: bold;
+}
+
+
+.reciept .body .sendbtn{
+    border:2px solid rgb(70, 70, 197);
+    color: rgb(70, 70, 197);
+}
+
+
+.reciept .body .goHome{
+    background-color: rgb(70, 70, 197);
+    color: white;
+}
+
+
+.done{
+    background-color: rgb(70, 70, 197);
+    height: 20em;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.done h3{
+    padding-top: 1em;
+    font-size: 1.5em;
+}

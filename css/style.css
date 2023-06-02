@@ -1,0 +1,500 @@
+body{
+    background-color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar  */
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(70, 70, 197);
+    padding: 1em;
+    width: 100%;
+    z-index: 100;
+}
+
+nav .pics{
+    display: flex;
+}
+
+nav .pics li{
+    margin-left: 1em;
+}
+
+nav .pics a{
+    text-decoration: none;
+    color: white;
+}
+
+nav img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+li{
+    list-style-type: none;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+
+/* Sidebar */
+#sidebar.active{
+    transition: .4s;
+    margin-left: 0%;
+}
+
+.sidebar{
+    z-index: 200;
+    margin-left: -80%;
+    transition: .4s;
+    background-color: whitesmoke;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    box-shadow: .1em .1em 1em rgba(0, 0, 0, 0.276);
+}
+
+/* profile details */
+.sidebar{
+    overflow: scroll;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.sidebar .pro-details{
+    display: flex;
+    justify-content: space-between;
+    padding: .5em;
+    margin-top: .5em;
+}
+
+.sidebar .pro-details .avatar{
+    width: 3em;
+    background: linear-gradient(rgb(0, 123, 255),rgb(55, 55, 172),red);
+    height: 3em;
+    border-radius: 50%;
+}
+
+
+.sidebar .pro-details span{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1em;
+    margin-bottom: .3em;
+}
+
+.sidebar .pro-details p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1em;
+    margin-top: .3em;
+    color: rgba(0, 0, 0, 0.632);
+}
+
+
+
+/* wallet balance */
+.sidebar .balance{
+    background-color: rgb(70, 70, 197);
+    color: whitesmoke;
+    padding: .4em;
+}
+
+.sidebar .balance span{
+    color: rgba(245, 245, 245, 0.486);
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1em;
+}
+
+.sidebar .balance h4{
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.9em;
+    text-align: center;
+    margin-top: .4em;
+    margin-bottom: .8em;
+}
+
+.sidebar .balance .action{
+    display: flex;
+    justify-content: space-evenly;
+    color: rgba(245, 245, 245, 0.749);
+    margin-bottom: 1.4em;
+}
+
+.sidebar .balance i {
+    background-color: rgba(0, 0, 0, 0.352);
+    padding: 1em;
+    border-radius: 50%;
+}
+
+.sidebar .balance p{
+    margin-bottom: .5em;
+}
+
+.sidebar .sideAction{
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.sidebar .sideAction a{
+    text-decoration: none;
+    color:rgb(70, 70, 197) ;
+    font-size: 1.3em;
+    margin-left: 1em;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sidebar .sideAction i {
+    font-size: 1.3em;
+    color:rgb(70, 70, 197) ;
+    margin-left: .7em;
+}
+
+.sidebar .sideAction .logout{
+    color: red;
+}
+
+/* blank */
+.blank{
+    height: 18em;
+    width: 100%;
+    background-color: rgb(70, 70, 197);
+}
+
+
+/* main */
+.main{
+    padding-top: 6em;
+    transform: translateY(-290px);
+}
+
+/* main user name */
+.main .name{
+    display: flex;
+    color: whitesmoke;
+    margin-left: 5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main .name .fname{
+    margin-left: .5em;
+}
+
+.main .name i{
+    margin-left: .5em;
+}
+
+/* total balance */
+.main .totalB{
+    box-shadow: .1em .1em 1em rgba(0, 0, 0, 0.258);
+    width: 90%;
+    margin: auto auto;
+    border-radius: .3em;
+    padding: 1em;
+    background-color: white;
+    margin-bottom: 3em;
+}
+
+.main .totalB .money{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .totalB .money span{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: .5em;
+    color: rgba(0, 0, 0, 0.671);
+}
+
+.main .totalB .money h4{
+    margin-top: .3em;
+    font-size: 1.9em;
+    margin-bottom: .6em;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main .totalB .money .add button{
+    background-color: rgba(70, 70, 197, 0.32);
+    padding: 1em;
+    color: rgb(70, 70, 197);
+    border-radius: .3em;
+}
+
+.main .action{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main .action i{
+    border-radius: .4em;
+    padding: 1em;
+    font-size: 1.1em;
+}
+
+.main .action .fa-plus{
+    background-color: red;
+    color: whitesmoke;
+}
+
+.main .action .fa-arrow-down{
+    background-color: rgb(70, 70, 197);
+    color: whitesmoke;
+}
+
+.main .action .fa-arrow-right{
+    background-color: rgb(255, 153, 0);
+    color: whitesmoke;
+}
+
+.main .action p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+/* Transfer msg */
+.static h4{
+    /* z-index: 1000; */
+    color:whitesmoke;
+    transform: translateY(-350px) ;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    background-color: rgb(253, 40, 40);
+    width: 80%;
+    margin: auto auto;
+    border-radius: .2em;
+}
+
+
+/* four row */
+.fourcol .rows{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fourcol .rows div{
+    width: 45%;
+    padding: 1.1em;
+    background-color: white;
+    border-radius: .7em;
+    box-shadow: .1em .1em 1em rgba(0, 0, 0, 0.128);
+    margin-bottom: 2em;
+    overflow: scroll;
+}
+
+.fourcol .rows span{
+    font-size: 1.3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(0, 0, 0, 0.591);
+    margin-bottom: .3em;
+}
+
+.fourcol .rows .income{
+    color: green;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.fourcol .rows .expenses{
+    color: red;
+    font-weight: bold;
+    font-size: 1.3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.fourcol .rows .savings{
+    color: rgb(255, 174, 0);
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.fourcol .rows .bills{
+    color: rgb(111, 0, 255);
+    font-weight: bold;
+    font-size: 1.3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* transaction */
+
+.tx{
+    margin-top: 2em;
+}
+
+.tx .head{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+}
+
+.tx .head a {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.tx .head h5{
+    color: rgba(0, 0, 0, 0.817);
+    font-size: 1.8em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.tx .txPack {
+    margin: 1em;
+}
+
+.tx .txPack .avatar{
+    background:  linear-gradient(rgb(0, 123, 255),rgb(55, 55, 172),red);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+.tx .txPack .flexAvatar{
+    display: flex;
+    padding: .5em;
+}
+
+.tx .txPack .info{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: .1em .1em 1em rgba(0, 0, 0, 0.167);
+    border-radius: .3em;
+    margin-bottom: 2em;
+}
+
+.tx .txPack .info .txAmount .debit{
+    padding: .5em;
+    color: red;
+    font-size: 1.1em;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.tx .txPack .info .txAmount .credit{
+    padding: .5em;
+    color: green;
+    font-size: 1.1em;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.tx .txPack .info .txName{
+    margin-left: .8em;
+}
+
+.tx .txPack .info .txName h5{
+    margin-bottom: -1em;
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.605);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.tx .txPack .info .time{
+    transform: translateY(-20px);
+    text-align: right;
+    padding-right: .5em;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.505);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.tx .txPack .info .txName span{
+    color: rgba(0, 0, 0, 0.525);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* card */
+.cards {
+    text-align: center;
+    margin-top: 3em;
+}
+
+.cards .head{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+}
+
+.cards .head a {
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+.cards .head h5{
+    color: rgba(0, 0, 0, 0.817);
+    font-size: 1.8em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.cards .card{
+    /* background-color: #6236FF; */
+    background: radial-gradient(rgb(0, 225, 255),rgb(38, 7, 219),rgb(0, 85, 255));
+    padding: 1em;
+    width: 90%;
+    margin: auto auto;
+    border-radius: .9em;
+    /* box-shadow: .1em .1em 1em rgba(0,0,0,0.09); */
+}
+
+.cards .cardBal span{
+    font-size: 1.2em;
+    color: rgba(245, 245, 245, 0.779);
+    margin-bottom: .8em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cards .cardBal h4{
+    font-size: 1.7em;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cards .cardBal p{
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.779);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cards .cardBal h5{
+    font-size: 1.7em;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cards .card .info{
+    margin-top: 3em;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2em;
+}
+
+.cards .card .info p{
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.779);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cards .card .info span{
+    font-size: 1.3em;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

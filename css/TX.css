@@ -1,0 +1,94 @@
+
+/* transaction */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.tx .top{
+    background-color: rgb(70, 70, 197) ;
+    position: fixed;
+    width: 100%;
+    transform: translateY(-20px);
+    margin-bottom: 30em;
+    padding: 1.5em;
+}
+
+.tx .top span{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-left: 2.5em;
+    transform: translateY(120px);
+    color: white;
+}
+
+.tx i{
+    color: white;
+    font-size: 1.7em;
+}
+
+
+.tx .txPack {
+    margin: 1em;
+    padding-top:6em;
+}
+
+.tx .txPack .avatar{
+    background:  linear-gradient(rgb(0, 123, 255),rgb(55, 55, 172),red);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+.tx .txPack .flexAvatar{
+    display: flex;
+}
+
+.tx .txPack .info{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 1em;
+    box-shadow: .1em .1em 1em rgba(0, 0, 0, 0.167);
+    border-radius: .3em;
+    margin-bottom: 2em;
+}
+
+.tx .txPack .info .time{
+    text-align: right;
+    margin-top: .3em;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.505);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.tx .txPack .info .txAmount p{
+    color: red;
+    font-size: 1.1em;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.tx .txPack .info .txAmount span{
+    color: green;
+    font-size: 1.1em;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.tx .txPack .info .txName{
+    margin-left: .8em;
+}
+
+.tx .txPack .info .txName h5{
+    color: rgba(0, 0, 0, 0.769);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.tx .txPack .info .txName span{
+    color: rgba(0, 0, 0, 0.525);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
